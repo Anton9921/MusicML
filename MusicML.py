@@ -70,7 +70,7 @@ else:
     ])
     model.compile(loss='categorical_crossentropy', optimizer=Adam(learning_rate=0.001))
     model.summary()
-    model.fit(X, y, epochs=1, batch_size=128) # training the model with prepared data
+    model.fit(X, y, epochs=20, batch_size=128) # training the model with prepared data
 
 # STEP 3: Generate new music using the trained model
 def sample_with_temperature(predictions, temperature=1.0):
